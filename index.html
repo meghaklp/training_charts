@@ -1,0 +1,240 @@
+<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+     Training details 
+    </title>
+    <link rel="stylesheet" href="/css/grid.css" />
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['corechart','table']});
+    </script>
+    <script type="text/javascript">
+
+
+      function drawVisualization() {
+ /*
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([
+          ['Block', 'Phase 1 (Jun)', 'Phase 2 (Jan)'],
+          ['KUSTAGI',  59,    13],
+          ['MUNDARGI',  28,    19]
+        ]);
+      
+        // Create and draw the visualization.
+        new google.visualization.BarChart(document.getElementById('visualization1')).
+            draw(data,
+                 {title:"English MRP Training",
+                  width:500, height:200,
+                  hAxis: {title: "Number of MRPs Trained"},chartArea:{width:'60%'}}
+            );
+       visualization = new google.visualization.Table(document.getElementById('table1'));
+       visualization.draw(data, null);
+        data = google.visualization.arrayToDataTable([
+          ['Block', 'Phase 1 (Jun)', 'Phase 2 (Jan)'],
+          ['KUSTAGI',  40,    0],
+          ['MUNDARGI',  28,    22]
+        ]);
+        
+        // Create and draw the visualization.
+        new google.visualization.BarChart(document.getElementById('visualization2')).
+            draw(data,
+                 {title:"MATHS MRP Training",
+                  width:500, height:200,
+                  hAxis: {title: "Number of MRPs Trained"},chartArea:{width:'60%'}}
+            );
+       visualization = new google.visualization.Table(document.getElementById('table2'));
+       visualization.draw(data, null);
+    data = google.visualization.arrayToDataTable([
+    ['Status', 'Number'],
+    ['Trained', 505],
+    ['To-Be-Trained', 59]
+  ]);
+
+  // Create and draw the visualization.
+  new google.visualization.PieChart(document.getElementById('visualization7')).
+      draw(data, {title:"Kustagi - English Teacher Training completion"});
+
+    data = google.visualization.arrayToDataTable([
+    ['Status', 'Number'],
+    ['Trained', 257],
+    ['To-Be-Trained', 18]
+  ]);
+
+  // Create and draw the visualization.
+  new google.visualization.PieChart(document.getElementById('visualization8')).
+      draw(data, {title:"Mundargi - English Teacher Training completion"});
+
+
+    data = google.visualization.arrayToDataTable([
+    ['Block', 'Trained','Yet To be Trained','Total'],
+    ['Kustagi', 505,59,564],
+    ['Mundargi', 257,18,275]
+  ]);
+
+       visualization = new google.visualization.Table(document.getElementById('table3'));
+       visualization.draw(data, null);
+
+
+    data = google.visualization.arrayToDataTable([
+    ['Status', 'Number'],
+    ['Trained', 404],
+    ['To-Be-Trained', 134]
+  ]);
+
+
+  // Create and draw the visualization.
+  new google.visualization.PieChart(document.getElementById('visualization9')).
+      draw(data, {title:"Kustagi - MATHS Teacher Training completion"});
+
+    data = google.visualization.arrayToDataTable([
+    ['Status', 'Number'],
+    ['Trained', 327],
+    ['To-Be-Trained', 0]
+  ]);
+
+  // Create and draw the visualization.
+  new google.visualization.PieChart(document.getElementById('visualization10')).
+      draw(data, {title:"Mundargi - MATHS Teacher Training completion"});
+
+
+  data = google.visualization.arrayToDataTable([
+    ['Block', 'Trained','Yet To be Trained','Total'],
+    ['Kustagi', 404,134,538],
+    ['Mundargi', 327,0,326]
+  ]);
+
+       visualization = new google.visualization.Table(document.getElementById('table4'));
+       visualization.draw(data, null);
+*/
+       data = google.visualization.arrayToDataTable([
+          ['Months', 'Kustagi', 'Mundargi','Hoskote','Devanhalli'],
+          ['Jun',59,28,0,0],
+          ['Jul',0,0,23,4],
+	  ['Aug',0,0,96,91],
+	  ['Sep',0,0,158,0],
+	  ['Oct',0,0,0,0],
+	  ['Nov',305,257,0,0],
+	  ['Dec',200,0,0,0],
+	  ['Jan',0,0,0,0],
+	  ['Feb',0,0,0,0],
+          ['Untrained',-55,-14,-63,-11]
+
+        ]);
+      
+        // Create and draw the visualization.
+        new google.visualization.ColumnChart(document.getElementById('visualization3')).
+            draw(data,
+                 {title:"English Phase 1 Teacher Training",
+                  width:'100%',height:400,colors:['blue','green','orange','grey'],bar:{groupWidth:'90%'},
+                  hAxis: {title: "Months",slantedText:true},chartArea:{width:'60%'}}
+            );
+  
+    
+      data = google.visualization.arrayToDataTable([
+          ['Months', 'Kustagi', 'Mundargi','Hoskote','Devanhalli'],
+	  ['Jun',40,28,0,0],
+	  ['Jul',0,115,0,4],
+	  ['Aug',308,183,30,97],
+	  ['Sep',0,0,210,0],
+	  ['Oct',0,0,0,0],
+	  ['Nov',0,0,0,0],
+	  ['Dec',96,29,0,0],
+	  ['Jan',94,0,0,0],
+	  ['Feb',0,0,0,0],
+	  ['Untrained',-152,-11,-100,-13]
+        ]);
+      
+        // Create and draw the visualization.
+        new google.visualization.ColumnChart(document.getElementById('visualization4')).
+            draw(data,
+                 {title:"MATHS Phase 1 Teacher Training",
+                  width:'100%',height:400,colors:['blue','green','orange','grey'], bar:{groupWidth:'90%'},
+                  hAxis: {title: "Months",slantedText:true},chartArea:{width:'60%'}}
+            );
+/*
+      data = google.visualization.arrayToDataTable([
+           ['Block','Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Total Trained','Yet to be trained'],
+           ['Kustagi',59,0,0,0,0,305,200,0,0,564,55],
+           ['Mundargi',28,0,0,0,0,257,0,0,0,285,14],
+           ['Hoskote',0,23,96,158,0,0,0,0,0,277,63],
+           ['Devanhalli',0,4,91,0,0,0,0,0,0,95,11]
+      ]);
+
+
+       visualization = new google.visualization.Table(document.getElementById('table5'));
+       visualization.draw(data, null);
+
+      data = google.visualization.arrayToDataTable([
+           ['Block','Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Total Trained','Yet to be trained'],
+           ['Kustagi',40,0,308,0,0,0,96,94,0,538,152],
+           ['Mundargi',28,115,183,0,0,0,29,0,0,355,11],
+           ['Hoskote',0,0,30,210,0,0,0,0,0,240,100],
+           ['Devanhalli',0,4,97,0,0,0,0,0,0,101,13]
+      ]);
+       visualization = new google.visualization.Table(document.getElementById('table6'));
+       visualization.draw(data, null);
+*/
+      }
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+<!--div class="container container_12">
+   
+  <div class="grid_6">
+    <div id="visualization1"></div>
+  </div>
+  <div class="grid_6">
+    <div id="visualization2"></div>
+  </div>
+  <div class="clear">&nbsp;</div> 
+  <div class="grid_6">
+    <div id="table1"></div>
+  </div>
+  <div class="grid_6">
+    <div id="table2"></div>
+  </div>
+  <div class="clear">&nbsp;</div> 
+  <div class="grid_6">
+    <div id="visualization7"></div>
+  </div>
+  <div class="grid_6">
+    <div id="visualization9"></div>
+  </div>
+ <div class="clear">&nbsp;</div> 
+  <div class="grid_6">
+    <div id="visualization8"></div>
+  </div>
+  <div class="grid_6">
+    <div id="visualization10"></div>
+  </div>
+  <div class="clear">&nbsp;</div> 
+  <div class="grid_6">
+    <div id="table3"></div>
+  </div>
+  <div class="grid_6">
+    <div id="table4"></div>
+  </div>
+  <div class="clear">&nbsp;</div>   
+ <hr/><br/><br/>
+  </div-->
+ <!--div class="clear">&nbsp;</div> 
+  <div class="grid_12">
+    <div id="table5"></div>
+  </div>
+  <div class="grid_12">
+    <div id="table6"></div>
+  </div>
+  <div class="clear">&nbsp;</div-->
+
+    <div id="visualization3"></div>
+    <div id="visualization4"></div>
+  </body>
+</html>
